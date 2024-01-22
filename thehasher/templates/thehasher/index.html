@@ -1,0 +1,11 @@
+{% if hashinputs %}
+
+    <ul>
+        {% for hashinput in hashinputs %}
+        <li>{{hashinput.hashType}} - {{hashinput.hashText}}</li>
+        {% endfor %}
+    </ul>
+{% else %} 
+    <p> No hashes </p>
+{% endif %}
+¬
